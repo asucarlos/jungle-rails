@@ -30,6 +30,7 @@ class ApplicationController < ActionController::Base
   helper_method :cart_subtotal_cents
 
 
+
   def update_cart(new_cart)
     cookies[:cart] = {
       value: JSON.generate(new_cart),
