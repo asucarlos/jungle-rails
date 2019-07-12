@@ -8,6 +8,11 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
+  def order_product(order)
+    @order = Order.find(params[:id])
+    @line_items = @order.line_items
+  end 
+
   def authorize
     redirect_to '/login' unless current_user
   end
