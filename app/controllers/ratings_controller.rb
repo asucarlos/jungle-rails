@@ -11,9 +11,13 @@ class RatingsController < ApplicationController
     if rating.save
       redirect_to '/'
     else 
-      # p rating.errors.full_messages
       redirect_to product
     end
+  end
+
+  def destroy
+    @rating.destroy
+    redirect_to [@product], notice: 'Review deleted!'
   end
   private
 
