@@ -45,6 +45,16 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.5'
+ 
+end
+
+group :test do
+  # ...more stuff here
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers', '~> 3.0', require: false
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'simplecov'
 end
 
 group :development do
