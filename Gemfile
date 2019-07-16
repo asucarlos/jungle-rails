@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-# ruby "~> 2.3.0"
+ruby "~> 2.3.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -53,7 +53,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers', '~> 3.0', require: false
   gem 'database_cleaner'
-  gem 'faker'
+  # gem 'faker'
   gem 'simplecov'
 end
 
@@ -62,7 +62,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem 'spring', '~> 2.0'
 end
 
 group :production do
