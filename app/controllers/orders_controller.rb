@@ -14,7 +14,6 @@ class OrdersController < ApplicationController
     @line_items = @order.line_items
 
 
-    puts order
     # order_product()
 
     if order.valid?

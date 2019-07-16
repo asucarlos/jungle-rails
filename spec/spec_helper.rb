@@ -1,4 +1,4 @@
-require 'database_cleaner'
+# require 'database_cleaner'
 require 'factory_bot_rails'
 require 'simplecov'
 SimpleCov.start
@@ -101,19 +101,20 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-config.before(:suite) do
-  DatabaseCleaner.strategy = :transaction
-  DatabaseCleaner.clean_with(:truncation)
-end
+# config.before(:suite) do
+#   DatabaseCleaner.strategy = :transaction
+#   DatabaseCleaner.clean_with(:truncation)
+# end
 
-config.around(:each) do |example|
-  DatabaseCleaner.cleaning do
-    example.run
-  end
-end
+# config.around(:each) do |example|
+#   DatabaseCleaner.cleaning do
+#     example.run
+#   end
+# end
 
-config.include FactoryBot::Syntax::Methods
+  config.include FactoryBot::Syntax::Methods
 
+  
 # ... lots of stuff here
 end
 

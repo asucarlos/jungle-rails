@@ -53,7 +53,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers', '~> 3.0', require: false
   gem 'database_cleaner'
-  # gem 'faker'
+  gem 'faker'
   gem 'simplecov'
   gem 'capybara'
   gem 'poltergeist'

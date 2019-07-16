@@ -22,8 +22,6 @@ RSpec.describe Product, type: :model do
       @product.valid? 
 
       expect(@product.errors.full_messages).to eq(["Name can't be blank"])
-      # expect(@product).to_not be_valid
-      # puts @product.errors.full_messages
 
     end
     it "is valid with valid price" do 
